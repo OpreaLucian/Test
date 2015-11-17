@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="ArrayFunctions.js"></script>
+</head>
+<body>
+    <p><b>Problem 1</b></p>
+    <p>The array used for our function test is: -1,2,-3</p>
+    <label>Elements sum: </label><label id="sumOfArrayElements"></label>
+
+    <br/>
+    <p><b>Problem 2</b></p>
+    <p>The array used for our function test is:  {0, -2, 1, -4, 3}</p>
+    <p>The largest two elements is: </p>
+    First element: <label id="firstElement"></label>
+    <br />
+    Second element: <label id="secondElement"></label>
+
+    <script type="text/javascript">
+        var myFirstArray = [-1, 2, -3];
+
+        document.getElementById("sumOfArrayElements").innerHTML = GetSumOfArrayElements(myFirstArray);
+
+        var mySecondArray = [0, -2, 1, -4, 3];
+
+        var result = GetTwoLargestElementsOfArray(mySecondArray);
+
+        document.getElementById("firstElement").innerHTML = result[0];
+        document.getElementById("secondElement").innerHTML = result[1];
+    </script>
+</body>
+</html>
